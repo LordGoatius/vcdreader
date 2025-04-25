@@ -10,4 +10,5 @@ crate-type = [ 'staticlib' ]
 name = 'vcdreader'
 
 [dependencies]
-extendr-api = '*'
+extendr-api = { version = "*", default-features = false, features= ["result_condition"] }
+vcd = "0.7.0"
